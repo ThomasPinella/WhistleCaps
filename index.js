@@ -2,9 +2,9 @@ var express = require('express');
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
-app.set('views', './views');
+//app.set('views', './views');
 
-app.use(express.static(__dirname + '/public'));
+//app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
 	res.render('home', {
@@ -17,7 +17,7 @@ var server = app.listen(app.get('port'), function () {
 });
 
 var io = require('socket.io')(server);
-
+/*
 io.on('connection', function(socket) {
     console.log('connected!');
     socket.on('chat message', function(msg) {
@@ -25,3 +25,4 @@ io.on('connection', function(socket) {
         io.emit('chat message', msg);
     });
 });
+*/

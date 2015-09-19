@@ -1,6 +1,6 @@
 {
-  "name": "WhistleCaps",
-  "version": "0.0.0",
+  "name": "whistlecaps",
+  "version": "1.0.0",
   "description": "JamSesh",
   "main": "index.js",
   "scripts": {
@@ -8,11 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ThomasPinella/WhistleCaps.git"
+    "url": "git+https://github.com/ThomasPinella/WhistleCaps.git"
   },
   "author": "Thomas Pinella, Ben Dantowitz, Dylan Wadler",
-  "license": "BSD",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ThomasPinella/WhistleCaps/issues"
+  },
+  "homepage": "https://github.com/ThomasPinella/WhistleCaps#readme",
+  "dependencies": {
+    "express": "^4.13.3"
   }
 }
